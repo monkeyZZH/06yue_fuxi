@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="test.bwie.com.a06yue_fuxi.MainActivity">
+    <RadioGroup
+        android:id="@+id/rg_tab_qz"
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:layout_alignParentBottom="true"
+        android:background="#959595"
+        android:button="@null"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_qz"
+            android:gravity="center"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/b1"
+
+            android:checked="true"
+            android:onClick="qz"
+            android:button="@null"
+            android:text="圈子" />
+
+        <RadioButton
+            android:id="@+id/rb_py"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:onClick="py"
+
+            android:drawableTop="@drawable/b1"
+            android:text="朋友" />
+
+        <RadioButton
+            android:id="@+id/rb_wd"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:onClick="wd"
+            android:gravity="center"
+            android:drawableTop="@drawable/b1"
+
+            android:text="我的" />
+
+    </RadioGroup>
+
+    <!-- VIewPager 主要是加载内容的 -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vpager"
+        android:layout_above="@id/rg_tab_qz"
+        android:layout_marginBottom="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
